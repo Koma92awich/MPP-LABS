@@ -6,12 +6,8 @@ public class Condo extends Property {
 	public Condo(int numFloors) {
 		this.numFloors = numFloors;
 	}
-
 	@Override
 	public double computeRent() {
-
 		return 400*numFloors;
 	}
-	
-
 }

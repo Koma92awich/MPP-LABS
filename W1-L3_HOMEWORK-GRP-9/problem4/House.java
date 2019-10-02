@@ -11,7 +11,4 @@ public class House extends Property {
 	public double computeRent() {
 		return 0.1*lotSize;
 	}
-
-	
-
 }

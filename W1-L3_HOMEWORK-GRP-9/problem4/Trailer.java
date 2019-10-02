@@ -7,6 +7,4 @@ public class Trailer extends Property {
 	public double computeRent() {
 		return rent;
 	}
-	
-
 }
