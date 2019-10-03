@@ -6,5 +6,7 @@ public class Driver {
 		Property[] properties = { new House(9000), new Condo(2), new Trailer() };
 		double totalRent = Admin.computeTotalRent(properties);
 		System.out.println(totalRent);
+              
+               //Output: 2200.0
 	}
 }
