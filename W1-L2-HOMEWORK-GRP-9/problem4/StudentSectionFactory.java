@@ -37,7 +37,7 @@ public class StudentSectionFactory {
 	}
 	
 	/**
-	 * 
+	 * New Transript Entry
 	 * @param s
 	 * @param sect
 	 * @param grade

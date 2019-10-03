@@ -3,7 +3,7 @@ package problem2A;
 public class StudentGradeFactory {
 	public static Student createStudent(String name) {
 		if(name == null)
-			throw new IllegalArgumentException("Customer name cannot be null");
+			throw new IllegalArgumentException("Name cannot be null");
 		
 		GradeReport gradeReport = new GradeReport("A");
 		

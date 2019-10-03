@@ -11,9 +11,12 @@ public class Order {
 
 	
 	//package level
-	public Order(int orderNum,LocalDate orderDate) {
+	public Order(int orderNum,LocalDate orderDate,int lineNumber,double price,String quantity) {
 		this.orderNum = orderNum;
 		this.orderDate = orderDate;
+		
+		OrderLine orderLine = new OrderLine(lineNumber, price, quantity, this);
+		this.orderLines.add(orderLine);
 	}
 	
 	public void addOrderLine(OrderLine orderLine) {
