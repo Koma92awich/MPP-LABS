@@ -1,0 +1,2 @@
+false: Because Person can be a PersonWithJob but a PersonWithJob cannot be a Person.
+true: Because Person can be a PersonWithJob.

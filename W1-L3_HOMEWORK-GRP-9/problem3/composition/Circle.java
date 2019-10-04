@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment3.problem3;
+package package3.composition;
 
 /**
  * @author 610488

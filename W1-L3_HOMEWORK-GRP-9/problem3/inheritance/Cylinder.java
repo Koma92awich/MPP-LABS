@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment3.problem3;
+package package3.inheritance;
 
 /**
  * @author Group 9
@@ -9,7 +9,6 @@ package assignment3.problem3;
  */
 public class Cylinder {
 	private double height;
-	private Circle circle;
 	private double radius;
 	
 	public Cylinder(double radius,double height) {
