@@ -1,4 +1,4 @@
-package assignment3.problem1;
+package problem1;
 
 
 public class Person {

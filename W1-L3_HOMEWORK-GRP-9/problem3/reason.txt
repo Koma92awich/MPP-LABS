@@ -1,0 +1,2 @@
+It doesnt make sense because it voilates the IS-A principle that is to say
+a circle is not a cylinder.

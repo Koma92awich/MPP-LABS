@@ -1,2 +1,0 @@
-false: Because PersonWithJob is a subclass and can't be compared to its parent class "Person"
-true: Because PersonWithJob is a subclass of Person and inherits its attributes from the parent class.
