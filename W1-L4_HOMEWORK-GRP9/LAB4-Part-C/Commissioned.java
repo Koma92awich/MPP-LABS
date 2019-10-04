@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment4.problem4;
+package problem4;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -15,9 +15,10 @@ public class Commissioned extends Employee {
 	private double baseSalary;
 	private List<Order> orders;
 
-	public Commissioned(double commission, double baseSalary) {
+	public Commissioned(double commission, double baseSalary,List<Order> orderList) {
 		this.commission = commission;
 		this.baseSalary = baseSalary;
+		this.orders = orderList;
 	}
 
 	@Override

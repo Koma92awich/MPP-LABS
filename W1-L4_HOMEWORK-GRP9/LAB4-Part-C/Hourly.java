@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment4.problem4;
+package problem4;
 
 /**
  * @author Group 9

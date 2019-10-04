@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment4.problem4;
+package problem4;
 
 /**
  * @author Group 9
@@ -10,18 +10,20 @@ package assignment4.problem4;
 public abstract class Employee {
 	private int empId;
 
-	public void print() {
-
+	public void print(int month,int year) {
+		String details = "Employee Id :"+empId+"\n"
+				+ "Paystub: ";
+		System.out.println(details);
+		Paycheck paycheck = calcCompensation();
+		paycheck.print();
 	}
 
 	public Paycheck calcCompensation() {
-		return null;
+		return new Paycheck(calcGrossPay());
 	}
 
 	abstract double calcGrossPay();
 
-	public int getEmpId() {
-		return empId;
-	}
+	
 
 }

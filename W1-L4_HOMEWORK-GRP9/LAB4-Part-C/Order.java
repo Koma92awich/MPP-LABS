@@ -1,7 +1,7 @@
 /**
  * 
  */
-package assignment4.problem4;
+package problem4;
 
 import java.time.LocalDate;
 
@@ -13,14 +13,11 @@ public class Order {
 	private int orderNo;
 	private LocalDate orderDate;
 	private double orderAmount;
-	private Commissioned commissioned;
 	
-	public Order(int orderNo,LocalDate orderDate,double orderAmount,
-			Commissioned commissioned) {
+	public Order(int orderNo,LocalDate orderDate,double orderAmount) {
 		this.orderNo = orderNo;
 		this.orderDate = orderDate;
 		this.orderAmount = orderAmount;
-		this.commissioned = commissioned;
 	}
 	
 	public int getOrderNo() {
@@ -31,9 +28,7 @@ public class Order {
 		return orderDate;
 	}
 	
-	public Commissioned getCommissioned() {
-		return commissioned;
-	}
+	
 	
 	public double getOrderAmount() {
 		return orderAmount;
