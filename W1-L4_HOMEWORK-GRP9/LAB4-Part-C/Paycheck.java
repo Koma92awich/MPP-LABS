@@ -9,35 +9,47 @@ package problem4;
  */
 public final class Paycheck {
 	private double grossPay;
-	private final double fica = 23;
-	private final double state = 5;
-	private final double local = 1;
-	private final double medicare = 3;
-	private final double socialSecurity = 7.5;
+	private final double fica = 0.23;
+	private final double state = 0.05;
+	private final double local = 0.01;
+	private final double medicare = 0.03;
+	private final double socialSecurity = 0.075;
 
 	public Paycheck(double grossPay) {
 		this.grossPay = grossPay;
 	}
 
+	
+
 	public double getFica() {
-		return (fica / 100) * grossPay;
+		return fica;
 	}
+
+
 
 	public double getState() {
-		return (state / 100) * grossPay;
+		return state;
 	}
+
+
 
 	public double getLocal() {
-		return (local / 100) * grossPay;
+		return local;
 	}
+
+
 
 	public double getMedicare() {
-		return (medicare / 100) *grossPay;
+		return medicare;
 	}
 
+
+
 	public double getSocialSecurity() {
-		return (socialSecurity / 100) * grossPay;
+		return socialSecurity;
 	}
+
+
 
 	public void print() {
 		String result = "Gross Pay: "+grossPay+"\n"
@@ -52,7 +64,7 @@ public final class Paycheck {
 	}
 
 	public double getNetPay() {
-		double taxes = getFica() + getState() + getLocal() + getMedicare() + getSocialSecurity();
+		double taxes = (getFica() + getState() + getLocal() + getMedicare() + getSocialSecurity()) * grossPay;
 		return grossPay - taxes;
 	}
 
