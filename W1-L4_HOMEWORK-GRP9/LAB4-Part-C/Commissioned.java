@@ -15,16 +15,18 @@ public class Commissioned extends Employee {
 	private double baseSalary;
 	private List<Order> orders;
 
-	public Commissioned(double commission, double baseSalary,List<Order> orderList) {
+	public Commissioned(int empId,double commission, double baseSalary,List<Order> orderList) {
+		super(empId);
 		this.commission = commission;
 		this.baseSalary = baseSalary;
 		this.orders = orderList;
 	}
 
 	@Override
-	double calcGrossPay() {
-		double totalOrder = this.totalOrders();
-		double grossPay = baseSalary + ((commission / 100) * totalOrder);
+	double calcGrossPay(int month,int year) {
+		double totalOrders = this.totalOrders(month,year);
+		//double grossPay = baseSalary + ((commission / 100) * totalOrder);
+		double grossPay = baseSalary + commission * totalOrders;
 		return grossPay;
 	}
 
@@ -33,12 +35,13 @@ public class Commissioned extends Employee {
 	 * 
 	 * @return
 	 */
-	private double totalOrders() {
+	private double totalOrders(int month,int year) {
 		// Previous Month
-		int previousMonth = LocalDate.now().minusMonths(1).getMonthValue();
+		LocalDate ldate = LocalDate.of(year, month, 1);
+		int previousMonth = ldate.getMonthValue();
 		double totalOrder = 0.0;
 		for (Order order : orders) {
-			if (order.getOrderDate().minusMonths(1).getMonthValue() == previousMonth)
+			if (order.getOrderDate().getMonthValue() == previousMonth && order.getOrderDate().getYear() == year)
 				totalOrder += order.getOrderAmount();
 		}
 		return totalOrder;

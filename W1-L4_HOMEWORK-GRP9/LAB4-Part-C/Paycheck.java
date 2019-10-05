@@ -46,13 +46,14 @@ public final class Paycheck {
 						+ "Local: "+getLocal()+"\n"
 						+ "Medicare "+getMedicare()+"\n"
 						+ "Social Security: "+getSocialSecurity()+"\n"
-						+ "NET PAY: "+getNetPay();
+						+ "NET PAY: "+getNetPay()+"\n";
 		
 		System.out.println(result);
 	}
 
 	public double getNetPay() {
-		return grossPay - getFica() - getState() - getLocal() - getMedicare() - getSocialSecurity();
+		double taxes = getFica() + getState() + getLocal() + getMedicare() + getSocialSecurity();
+		return grossPay - taxes;
 	}
 
 }
