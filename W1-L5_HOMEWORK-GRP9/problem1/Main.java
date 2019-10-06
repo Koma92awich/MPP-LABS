@@ -9,6 +9,28 @@ public class Main {
 			d.display();
 			d.swim();
 		}
+		
+		//Output
+//		   MallardDuck:
+//			 display
+//			 fly with wings
+//			 quacking
+//			 swimming
+//			DecoyDuck:
+//			 displaying
+//			 cannot Fly
+//			 cannot quack
+//			 swimming
+//			RedHeadDuck:
+//			 displaying
+//			 fly with wings
+//			 quacking
+//			 swimming
+//			RubberDuck:
+//			 displaying
+//			 cannot Fly
+//			 squeaking
+//			 swimming
 			
 
 	}
