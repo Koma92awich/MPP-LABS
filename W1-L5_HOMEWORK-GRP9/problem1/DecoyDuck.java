@@ -9,32 +9,19 @@ package problem1;
  *
  */
 public class DecoyDuck extends Duck{
-
+	
 	public DecoyDuck() {
-		
+		flyBehavior = new CannotFly();
+		quackBehavior = new MuteQuack();
 	}
 
 	@Override
 	public void display() {
 		System.out.println("displaying");
-		
+		flyBehavior.fly();
+		quackBehavior.quack();
 	}
 
-	@Override
-	public void fly() {
-		System.out.println("cannot fly");
-		
-	}
-
-	@Override
-	public void quack() {
-		System.out.println("cannot quack");
-		
-	}
-
-	@Override
-	public void swim() {
-		System.out.println("swimming");	
-	}
+	
 
 }

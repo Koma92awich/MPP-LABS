@@ -9,29 +9,21 @@ package problem1;
  */
 public class MallardDuck extends Duck{
 
+	
+	public MallardDuck() {
+		flyBehavior = new FlyWithWings();
+		quackBehavior = new Quack();
+	}
 
 
 	@Override
 	public void display() {
 		System.out.println("display");
-		
+		flyBehavior.fly();
+		quackBehavior.quack();
 	}
 
-	@Override
-	public void swim() {
-		System.out.println("swimming");
-	}
-
-	@Override
-	public void fly() {
-		System.out.println("Fly with wings");
-		
-	}
-
-	@Override
-	public void quack() {
-		System.out.println("Quacking");
-		
-	}
+	
+	
 
 }

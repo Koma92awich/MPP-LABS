@@ -7,8 +7,6 @@ public class Main {
 		for(Duck d: ducks) {
 			System.out.println(d.getClass().getSimpleName() + ":");
 			d.display();
-			d.fly();
-			d.quack();
 			d.swim();
 		}
 			
