@@ -1,8 +1,10 @@
 package lab5;
 
 public class VehicleFactory {
+	private VehicleFactory(){
+	}
 
-	public Vehicle startEngine(String vehicleType) {
+	public static Vehicle startEngine(String vehicleType) {
 
 		if (vehicleType == null) {
 			return null;
