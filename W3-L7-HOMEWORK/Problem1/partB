@@ -1,0 +1,2 @@
+The result is wrong because  equal objects may gey different has values since the Equals method has been overriden but the Hascode
+has not been overriden.
