@@ -1,0 +1,2 @@
+It returns false because the equals compares three fields and some objects do not match
+because of the "visited" fields in the list contains true and false values.
