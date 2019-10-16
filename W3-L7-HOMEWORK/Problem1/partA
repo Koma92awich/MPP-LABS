@@ -1,0 +1,3 @@
+The contains method in the listAreaEqual method makes use of the equals method from the object class.
+Since the equals method has not been overriden in the Employee class, the declard equals method is called . 
+The equals method of the object class has to be overriden and the declared equals method in the Employye elimited.
