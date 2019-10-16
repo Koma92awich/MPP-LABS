@@ -1,0 +1,2 @@
+This is because default method in interfaces is a fully implemented method and thus can be overriden or not in implementing clases 
+without breaking the code
