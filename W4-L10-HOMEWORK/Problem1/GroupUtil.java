@@ -15,6 +15,6 @@ public class GroupUtil {
 		List<Integer> list = Arrays.asList(0,1,2,3,4);
 		Group<Integer> group = new Group<>(0, list);
 		System.out.println(group);
-		//System.out.println(GroupUtil.copy(group));
+		System.out.println(GroupUtil.copy(group));
 	}
 }
