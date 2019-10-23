@@ -97,8 +97,9 @@ public class Dish {
 				+ Dish.anyUnhealthyMenuGreaterthan100());
 
 		// d
-		System.out.println("find and return the first item for the type of MEAT: "
-				+ Dish.firstIteamMeat().ofNullable("No Meat Available").get());
+		//System.out.println("find and return the first item for the type of MEAT: "
+				//+ Dish.firstIteamMeat().ofNullable("No Meat Available").get());
+		System.out.println(firstIteamMeat());
 
 		// e
 		System.out.println("calculateTotalCalories() in the menu using reduce: " + Dish.totalCalories());
